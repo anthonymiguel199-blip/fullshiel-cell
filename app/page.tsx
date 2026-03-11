@@ -145,22 +145,25 @@ export default function FullShieldLinktree() {
               </p>
             </div>
 
-            {/* Links Section */}
-            <div className="mt-8 space-y-4">
+            {/* Links Section - ÍCONE NA ESQUERDA E TEXTO CENTRALIZADO */}
+            <div className="mt-8 space-y-3">
               {links.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`relative group flex items-center justify-start gap-3 rounded-full border px-5 py-4 text-base font-semibold transition duration-200 hover:-translate-y-0.5 ${
+                  className={`relative flex items-center justify-center rounded-full border px-6 py-3.5 text-sm font-semibold transition duration-200 hover:-translate-y-0.5 ${
                     link.highlight
-                      ? "border-yellow-300/70 bg-gradient-to-r from-[#0f2418] via-zinc-900 to-[#102818] text-yellow-100 shadow-[0_0_25px_rgba(250,204,21,0.18)]"
+                      ? "border-yellow-300/70 bg-gradient-to-r from-[#0f2418] via-zinc-900 to-[#102818] text-yellow-100 shadow-[0_0_20px_rgba(250,204,21,0.15)]"
                       : "border-yellow-400/45 bg-zinc-900/85 text-yellow-100"
                   } hover:border-yellow-300 hover:shadow-[0_0_22px_rgba(250,204,21,0.18)]`}
                 >
-                  <img src={link.icon} className="h-5 w-5 object-contain" alt="" />
-                  <span className="absolute left-1/2 -translate-x-1/2">{link.label}</span>
+                  {/* Ícone fixo na esquerda absoluta dentro do botão */}
+                  <img src={link.icon} className="absolute left-6 h-5 w-5 object-contain" alt="" />
+                  
+                  {/* Texto centralizado */}
+                  <span>{link.label}</span>
                 </a>
               ))}
             </div>
@@ -168,7 +171,7 @@ export default function FullShieldLinktree() {
             {/* Carousel Section */}
             <div id="servicos" className="mt-10 border-t border-yellow-400/20 pt-6">
               <div className="text-center">
-                <h2 className="text-lg font-bold text-yellow-200">Nossos Serviços</h2>
+                <h2 className="text-lg font-bold text-yellow-200 uppercase tracking-widest">Nossos Serviços</h2>
                 <p className="mt-2 text-sm text-zinc-400">Deslize para ver mais resultados.</p>
               </div>
 
@@ -203,22 +206,22 @@ export default function FullShieldLinktree() {
                 <div className="group p-4 rounded-3xl border border-yellow-400/10 bg-zinc-900/40 backdrop-blur-sm transition-all hover:border-yellow-400/40">
                   <span className="text-2xl">💎</span>
                   <h3 className="mt-2 text-xs font-bold text-yellow-100 uppercase">Dureza 9H</h3>
-                  <p className="mt-1 text-[12px] text-zinc-400">Máxima proteção contra riscos.</p>
+                  <p className="mt-1 text-[11px] text-zinc-400 leading-tight">Proteção máxima contra riscos.</p>
                 </div>
                 <div className="group p-4 rounded-3xl border border-yellow-400/10 bg-zinc-900/40 backdrop-blur-sm transition-all hover:border-yellow-400/40">
                   <span className="text-2xl">✨</span>
                   <h3 className="mt-2 text-xs font-bold text-yellow-100 uppercase">Invisível</h3>
-                  <p className="mt-1 text-[12px] text-zinc-400">Não altera o design original.</p>
+                  <p className="mt-1 text-[11px] text-zinc-400 leading-tight">Preserva o design original.</p>
                 </div>
                 <div className="group p-4 rounded-3xl border border-yellow-400/10 bg-zinc-900/40 backdrop-blur-sm transition-all hover:border-yellow-400/40">
                   <span className="text-2xl">💧</span>
                   <h3 className="mt-2 text-xs font-bold text-yellow-100 uppercase">Oleofóbico</h3>
-                  <p className="mt-1 text-[12px] text-zinc-400">Repele gotas de aguá.</p>
+                  <p className="mt-1 text-[11px] text-zinc-400 leading-tight">Menos marcas de dedo.</p>
                 </div>
                 <div className="group p-4 rounded-3xl border border-yellow-400/10 bg-zinc-900/40 backdrop-blur-sm transition-all hover:border-yellow-400/40">
                   <span className="text-2xl">⚡</span>
                   <h3 className="mt-2 text-xs font-bold text-yellow-100 uppercase">Touch 100%</h3>
-                  <p className="mt-1 text-[12px] text-zinc-400">Resposta imediata ao toque.</p>
+                  <p className="mt-1 text-[11px] text-zinc-400 leading-tight">Resposta tátil imediata.</p>
                 </div>
               </div>
             </div>
@@ -229,31 +232,31 @@ export default function FullShieldLinktree() {
                 Como Funciona
               </h2>
               <div className="space-y-4">
-                <div className="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900/40 border border-yellow-400/10 transition-all hover:bg-zinc-900/60">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-yellow-400 text-black font-bold text-sm shadow-[0_0_10px_rgba(250,204,21,0.4)]">1</span>
+                <div className="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900/40 border border-yellow-400/10">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-yellow-400 text-black font-bold text-sm">1</span>
                   <div>
                     <p className="text-xs font-bold text-yellow-100 uppercase">Agendamento</p>
                     <p className="text-[11px] text-zinc-400">Entre em contato via WhatsApp e informe o modelo do seu dispositivo.</p>
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900/40 border border-yellow-400/10 transition-all hover:bg-zinc-900/60">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-yellow-400 text-black font-bold text-sm shadow-[0_0_10px_rgba(250,204,21,0.4)]">2</span>
+                <div className="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900/40 border border-yellow-400/10">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-yellow-400 text-black font-bold text-sm">2</span>
                   <div>
                     <p className="text-xs font-bold text-yellow-100 uppercase">Atendimento Delivery</p>
                     <p className="text-[11px] text-zinc-400">Nos envie seu endereço e nossa equipe vai até você para realizar a aplicação.</p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900/40 border border-yellow-400/10 transition-all hover:bg-zinc-900/60">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-yellow-400 text-black font-bold text-sm shadow-[0_0_10px_rgba(250,204,21,0.4)]">3</span>
+                <div className="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900/40 border border-yellow-400/10">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-yellow-400 text-black font-bold text-sm">3</span>
                   <div>
                     <p className="text-xs font-bold text-yellow-100 uppercase">Proteção Ativa</p>
                     <p className="text-[11px] text-zinc-400">A blindagem líquida é aplicada e seu aparelho sai protegido em minutos.</p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900/40 border border-yellow-400/10 transition-all hover:bg-zinc-900/60">
+                <div className="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900/40 border border-yellow-400/10">
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-yellow-400 text-black font-bold text-sm shadow-[0_0_10px_rgba(250,204,21,0.4)]">4</span>
                   <div>
                     <p className="text-xs font-bold text-yellow-100 uppercase">Suporte VIP</p>
@@ -263,20 +266,17 @@ export default function FullShieldLinktree() {
               </div>
             </div>
 
-            {/* --- NOVO: BOTÃO DE AGENDAMENTO FINAL --- */}
+            {/* BOTÃO DE AGENDAMENTO FINAL */}
             <div className="mt-10 px-2">
               <a
                 href="https://wa.me/5519991504649?text=Ol%C3%A1!%20Li%20sobre%20o%20processo%20e%20quero%20agendar%20a%20minha%20blindagem%20premium%20agora!"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 w-full py-5 rounded-full bg-gradient-to-r from-yellow-500 via-yellow-400 to-amber-600 text-black font-black uppercase tracking-tighter text-sm shadow-[0_0_30px_rgba(250,204,21,0.4)] hover:scale-[1.03] active:scale-95 transition-all animate-pulse"
+                className="relative flex items-center justify-center w-full py-4 rounded-full bg-gradient-to-r from-yellow-500 via-yellow-400 to-amber-600 text-black font-black uppercase tracking-tighter text-sm shadow-[0_0_25px_rgba(250,204,21,0.35)] hover:scale-[1.02] active:scale-95 transition-all"
               >
-                <span></span>
-                Agendar minha Blindagem agora!
+                <span className="absolute left-6">🚀</span>
+                Agendar Blindagem agora!
               </a>
-              <p className="mt-3 text-center text-[10px] text-zinc-500 font-medium italic">
-                Aproveite nossa agenda para esta semana!
-              </p>
             </div>
 
             <p className="mt-12 text-center text-[10px] tracking-widest text-zinc-600 uppercase">
