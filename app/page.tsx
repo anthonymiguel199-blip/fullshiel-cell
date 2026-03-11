@@ -203,22 +203,22 @@ export default function FullShieldLinktree() {
                 <div className="group p-4 rounded-3xl border border-yellow-400/10 bg-zinc-900/40 backdrop-blur-sm transition-all hover:border-yellow-400/40">
                   <span className="text-2xl">💎</span>
                   <h3 className="mt-2 text-xs font-bold text-yellow-100 uppercase">Dureza 9H</h3>
-                  <p className="mt-1 text-[10px] text-zinc-400">Máxima proteção contra riscos e impactos.</p>
+                  <p className="mt-1 text-[12px] text-zinc-400">Máxima proteção contra riscos e impactos.</p>
                 </div>
                 <div className="group p-4 rounded-3xl border border-yellow-400/10 bg-zinc-900/40 backdrop-blur-sm transition-all hover:border-yellow-400/40">
                   <span className="text-2xl">✨</span>
                   <h3 className="mt-2 text-xs font-bold text-yellow-100 uppercase">Invisível</h3>
-                  <p className="mt-1 text-[10px] text-zinc-400">Não altera o design ou brilho da tela.</p>
+                  <p className="mt-1 text-[12px] text-zinc-400">Não altera o design ou brilho da tela.</p>
                 </div>
                 <div className="group p-4 rounded-3xl border border-yellow-400/10 bg-zinc-900/40 backdrop-blur-sm transition-all hover:border-yellow-400/40">
                   <span className="text-2xl">💧</span>
                   <h3 className="mt-2 text-xs font-bold text-yellow-100 uppercase">Oleofóbico</h3>
-                  <p className="mt-1 text-[10px] text-zinc-400">Repele marcas de dedo e sujeira.</p>
+                  <p className="mt-1 text-[12px] text-zinc-400">Repele marcas de dedo e sujeira.</p>
                 </div>
                 <div className="group p-4 rounded-3xl border border-yellow-400/10 bg-zinc-900/40 backdrop-blur-sm transition-all hover:border-yellow-400/40">
                   <span className="text-2xl">⚡</span>
                   <h3 className="mt-2 text-xs font-bold text-yellow-100 uppercase">Touch 100%</h3>
-                  <p className="mt-1 text-[10px] text-zinc-400">Resposta imediata ao toque.</p>
+                  <p className="mt-1 text-[12px] text-zinc-400">Resposta imediata ao toque.</p>
                 </div>
               </div>
             </div>
