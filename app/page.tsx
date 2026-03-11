@@ -17,7 +17,7 @@ export default function FullShieldLinktree() {
     },
     {
       label: "Localização",
-      href: "https://www.google.com/maps", // Substitua pelo link direto do seu Google Maps
+      href: "#", 
       icon: "/mapa.png",
     },
     {
@@ -194,7 +194,7 @@ export default function FullShieldLinktree() {
               </div>
             </div>
 
-            {/* --- NOVA SEÇÃO: DIFERENCIAIS (MUDANÇA AQUI) --- */}
+            {/* Diferenciais Section */}
             <div className="mt-12 space-y-6">
               <h2 className="text-center text-lg font-bold text-yellow-200 uppercase tracking-widest">
                 Por que nos escolher?
@@ -203,17 +203,17 @@ export default function FullShieldLinktree() {
                 <div className="group p-4 rounded-3xl border border-yellow-400/10 bg-zinc-900/40 backdrop-blur-sm transition-all hover:border-yellow-400/40">
                   <span className="text-2xl">💎</span>
                   <h3 className="mt-2 text-xs font-bold text-yellow-100 uppercase">Dureza 9H</h3>
-                  <p className="mt-1 text-[12px] text-zinc-400">Máxima proteção contra riscos e impactos.</p>
+                  <p className="mt-1 text-[12px] text-zinc-400">Máxima proteção contra riscos.</p>
                 </div>
                 <div className="group p-4 rounded-3xl border border-yellow-400/10 bg-zinc-900/40 backdrop-blur-sm transition-all hover:border-yellow-400/40">
                   <span className="text-2xl">✨</span>
                   <h3 className="mt-2 text-xs font-bold text-yellow-100 uppercase">Invisível</h3>
-                  <p className="mt-1 text-[12px] text-zinc-400">Não altera o design ou brilho da tela.</p>
+                  <p className="mt-1 text-[12px] text-zinc-400">Não altera o design original.</p>
                 </div>
                 <div className="group p-4 rounded-3xl border border-yellow-400/10 bg-zinc-900/40 backdrop-blur-sm transition-all hover:border-yellow-400/40">
                   <span className="text-2xl">💧</span>
                   <h3 className="mt-2 text-xs font-bold text-yellow-100 uppercase">Oleofóbico</h3>
-                  <p className="mt-1 text-[12px] text-zinc-400">Repele marcas de dedo e sujeira.</p>
+                  <p className="mt-1 text-[12px] text-zinc-400">Repele gotas de aguá.</p>
                 </div>
                 <div className="group p-4 rounded-3xl border border-yellow-400/10 bg-zinc-900/40 backdrop-blur-sm transition-all hover:border-yellow-400/40">
                   <span className="text-2xl">⚡</span>
@@ -223,24 +223,63 @@ export default function FullShieldLinktree() {
               </div>
             </div>
 
-            {/* --- NOVA SEÇÃO: LOCALIZAÇÃO (MUDANÇA AQUI) --- */}
-            <div className="mt-12 border-t border-yellow-400/20 pt-8">
-              <div className="overflow-hidden rounded-[32px] border border-yellow-400/20 bg-zinc-900/50 p-1 shadow-lg">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975!2d-46.6!3d-23.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMwJzAwLjAiUyA0NsKwMzYnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1600000000000"
-                  className="h-44 w-full rounded-[28px] grayscale transition-all duration-700 hover:grayscale-0"
-                  style={{ border: 0 }}
-                  allowFullScreen={true}
-                  loading="lazy"
-                ></iframe>
-                <div className="p-4 text-center">
-                  <p className="text-[11px] font-bold uppercase tracking-widest text-yellow-400">Visite nossa unidade</p>
-                  <p className="mt-1 text-[10px] text-zinc-400">Atendimento especializado em Blindagem Premium</p>
+            {/* Como Funciona Section */}
+            <div className="mt-12 border-t border-yellow-400/20 pt-8 pb-4">
+              <h2 className="text-center text-lg font-bold text-yellow-200 uppercase tracking-widest mb-6">
+                Como Funciona
+              </h2>
+              <div className="space-y-4">
+                <div className="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900/40 border border-yellow-400/10 transition-all hover:bg-zinc-900/60">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-yellow-400 text-black font-bold text-sm shadow-[0_0_10px_rgba(250,204,21,0.4)]">1</span>
+                  <div>
+                    <p className="text-xs font-bold text-yellow-100 uppercase">Agendamento</p>
+                    <p className="text-[11px] text-zinc-400">Entre em contato via WhatsApp e informe o modelo do seu dispositivo.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900/40 border border-yellow-400/10 transition-all hover:bg-zinc-900/60">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-yellow-400 text-black font-bold text-sm shadow-[0_0_10px_rgba(250,204,21,0.4)]">2</span>
+                  <div>
+                    <p className="text-xs font-bold text-yellow-100 uppercase">Atendimento Delivery</p>
+                    <p className="text-[11px] text-zinc-400">Nos envie seu endereço e nossa equipe vai até você para realizar a aplicação.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900/40 border border-yellow-400/10 transition-all hover:bg-zinc-900/60">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-yellow-400 text-black font-bold text-sm shadow-[0_0_10px_rgba(250,204,21,0.4)]">3</span>
+                  <div>
+                    <p className="text-xs font-bold text-yellow-100 uppercase">Proteção Ativa</p>
+                    <p className="text-[11px] text-zinc-400">A blindagem líquida é aplicada e seu aparelho sai protegido em minutos.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900/40 border border-yellow-400/10 transition-all hover:bg-zinc-900/60">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-yellow-400 text-black font-bold text-sm shadow-[0_0_10px_rgba(250,204,21,0.4)]">4</span>
+                  <div>
+                    <p className="text-xs font-bold text-yellow-100 uppercase">Suporte VIP</p>
+                    <p className="text-[11px] text-zinc-400">Acompanhamos sua satisfação e estamos disponíveis para qualquer dúvida.</p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <p className="mt-10 text-center text-[10px] tracking-widest text-zinc-600 uppercase">
+            {/* --- NOVO: BOTÃO DE AGENDAMENTO FINAL --- */}
+            <div className="mt-10 px-2">
+              <a
+                href="https://wa.me/5519991504649?text=Ol%C3%A1!%20Li%20sobre%20o%20processo%20e%20quero%20agendar%20a%20minha%20blindagem%20premium%20agora!"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3 w-full py-5 rounded-full bg-gradient-to-r from-yellow-500 via-yellow-400 to-amber-600 text-black font-black uppercase tracking-tighter text-bold shadow-[0_0_30px_rgba(250,204,21,0.4)] hover:scale-[1.03] active:scale-95 transition-all animate-pulse"
+              >
+                <span></span>
+                Agendar minha Blindagem agora!
+              </a>
+              <p className="mt-3 text-center text-[10px] text-zinc-500 font-medium italic">
+                Aproveite nossa agenda para esta semana!
+              </p>
+            </div>
+
+            <p className="mt-12 text-center text-[10px] tracking-widest text-zinc-600 uppercase">
               © 2026 FullShield Cell • Todos os direitos reservados
             </p>
 
