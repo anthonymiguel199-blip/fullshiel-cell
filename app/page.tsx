@@ -269,7 +269,7 @@ export default function FullShieldLinktree() {
                 href="https://wa.me/5519991504649?text=Ol%C3%A1!%20Li%20sobre%20o%20processo%20e%20quero%20agendar%20a%20minha%20blindagem%20premium%20agora!"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 w-full py-5 rounded-full bg-gradient-to-r from-yellow-500 via-yellow-400 to-amber-600 text-black font-black uppercase tracking-tighter text-bold shadow-[0_0_30px_rgba(250,204,21,0.4)] hover:scale-[1.03] active:scale-95 transition-all animate-pulse"
+                className="flex items-center justify-center gap-3 w-full py-5 rounded-full bg-gradient-to-r from-yellow-500 via-yellow-400 to-amber-600 text-black font-black uppercase tracking-tighter text-sm shadow-[0_0_30px_rgba(250,204,21,0.4)] hover:scale-[1.03] active:scale-95 transition-all animate-pulse"
               >
                 <span></span>
                 Agendar minha Blindagem agora!
