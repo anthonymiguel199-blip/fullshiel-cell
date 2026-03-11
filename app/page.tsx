@@ -216,7 +216,7 @@ export default function FullShieldLinktree() {
                 <div className="group p-4 rounded-3xl border border-yellow-400/10 bg-zinc-900/40 backdrop-blur-sm transition-all hover:border-yellow-400/40">
                   <span className="text-2xl">💧</span>
                   <h3 className="mt-2 text-xs font-bold text-yellow-100 uppercase">Oleofóbico</h3>
-                  <p className="mt-1 text-[11px] text-zinc-400 leading-tight">Menos marcas de dedo.</p>
+                  <p className="mt-1 text-[11px] text-zinc-400 leading-tight">Repele gotas de água.</p>
                 </div>
                 <div className="group p-4 rounded-3xl border border-yellow-400/10 bg-zinc-900/40 backdrop-blur-sm transition-all hover:border-yellow-400/40">
                   <span className="text-2xl">⚡</span>
@@ -274,7 +274,7 @@ export default function FullShieldLinktree() {
                 rel="noopener noreferrer"
                 className="relative flex items-center justify-center w-full py-4 rounded-full bg-gradient-to-r from-yellow-500 via-yellow-400 to-amber-600 text-black font-black uppercase tracking-tighter text-sm shadow-[0_0_25px_rgba(250,204,21,0.35)] hover:scale-[1.02] active:scale-95 transition-all"
               >
-                <span className="absolute left-6">🚀</span>
+                <span className="absolute left-6"></span>
                 Agendar Blindagem agora!
               </a>
             </div>
